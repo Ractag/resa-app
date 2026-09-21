@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:17
+    container_name: resa-db
+    environment:
+      POSTGRES_DB: resa
+      POSTGRES_USER: resa
+      POSTGRES_PASSWORD: resa_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - resa-db-data:/var/lib/postgresql/data
+
+volumes:
+  resa-db-data:
