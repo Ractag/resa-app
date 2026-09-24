@@ -37,4 +37,44 @@ public class AvailabilityRule {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public Pro getPro() {
+        return pro;
+    }
+
+    public void setPro(Pro pro) {
+        this.pro = pro;
+    }
+
+    public Short getDayOfWeek() {
+        return dayOfWeek;
+    }
+
+    public void setDayOfWeek(Short dayOfWeek) {
+        this.dayOfWeek = dayOfWeek;
+    }
+
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 }
