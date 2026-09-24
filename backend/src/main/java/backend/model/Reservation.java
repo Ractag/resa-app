@@ -13,7 +13,7 @@ public class Reservation {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "service_id", nullable = false)
-    private Service service;
+    private ServiceOffering service;
 
     @Column(name = "client_name", nullable = false)
     private String clientName;
@@ -40,11 +40,11 @@ public class Reservation {
         this.id = id;
     }
 
-    public Service getService() {
+    public ServiceOffering getService() {
         return service;
     }
 
-    public void setService(Service service) {
+    public void setService(ServiceOffering service) {
         this.service = service;
     }
 
